@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminCategoryActivity"
+    android:background="@color/white">
+    <TextView
+        android:id="@+id/slogan_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Add New Product"
+        android:textAlignment="center"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        />
+    <LinearLayout
+        android:id="@+id/linear1_category_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/slogan_category"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/can"
+            android:layout_width="90dp"
+            android:layout_height="80dp"
+            android:src="@drawable/can"
+            />
+
+        <ImageView
+            android:id="@+id/snack"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:src="@drawable/snack"
+            />
+
+        <ImageView
+            android:id="@+id/bread"
+            android:layout_width="90dp"
+            android:layout_height="80dp"
+            android:src="@drawable/bread"
+            android:layout_marginStart="16dp"
+            />
+
+        <ImageView
+            android:id="@+id/flour"
+            android:layout_width="90dp"
+            android:layout_height="80dp"
+            android:src="@drawable/flour"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear2_category_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear1_category_layout"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/fruits"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:src="@drawable/fruits"
+            />
+
+        <ImageView
+            android:id="@+id/veg"
+            android:layout_width="90dp"
+            android:layout_height="80dp"
+            android:src="@drawable/veg"
+            />
+
+        <ImageView
+            android:id="@+id/pul"
+            android:layout_width="90dp"
+            android:layout_height="80dp"
+            android:src="@drawable/pul"
+            />
+
+        <ImageView
+            android:id="@+id/tea"
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:src="@drawable/tea"
+            android:layout_marginStart="16dp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear3_category_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear2_category_layout"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <ImageView
+            android:id="@+id/milk"
+            android:layout_width="90dp"
+            android:layout_height="80dp"
+            android:src="@drawable/milk"
+            />
+
+        <ImageView
+            android:id="@+id/eggs"
+            android:layout_width="90dp"
+            android:layout_height="80dp"
+            android:src="@drawable/eggs"
+            />
+
+
+        <ImageView
+            android:id="@+id/fish"
+            android:layout_width="90dp"
+            android:layout_height="80dp"
+            android:src="@drawable/fish"
+            />
+
+        <ImageView
+            android:id="@+id/chick"
+            android:layout_width="90dp"
+            android:layout_height="80dp"
+            android:src="@drawable/chick"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear4_category_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear3_category_layout"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/spice"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:src="@drawable/spice" />
+
+        <ImageView
+            android:id="@+id/other"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:src="@drawable/other"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/check_orders_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/admin_logout_btn"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Check New Orders"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:id="@+id/admin_logout_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Logout"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        android:textAllCaps="false"
+        />
+</RelativeLayout>
